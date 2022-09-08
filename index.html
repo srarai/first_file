@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: red;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+            margin: 0px;
+        }
+
+        input {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="#" onsubmit="ongetcall(event)">
+
+        <fieldset>
+
+            <h4>Book a call</h4>
+
+            <h5>Book a call slot and our representative will call you within 1hr of selected time.</h5><hr><br>
+
+            <label for="name">Name:</label><br>
+
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="mail">Email:</label><br>
+
+            <input type="email" id="mail" name="mail" required><br><br>
+
+            <label for="telp">Phone:</label><br>
+
+            <input type="tel" id="telp" name="telp" required><br><br>
+
+            <label for="time">Time for call:</label><br>
+
+            <input type="datetime-local" id="time" name="time" required><br><br>
+
+            <button>GET A CALL</button>
+
+        </fieldset>
+
+    </form>
+
+
+
+    <script>
+
+        function ongetcall(event)
+
+        {
+
+            event.preventDefault();
+
+            console.log(event.target.name.value)
+
+            console.log(event.target.mail.value)
+
+            console.log(event.target.telp.value)
+
+            console.log(event.target.time.value)
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
